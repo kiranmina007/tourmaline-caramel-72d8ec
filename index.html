@@ -1,241 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    
-
-  </head>
-    
-  <body>
-  <!DOCTYPE html>
-<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HAFIZ SHAKIL</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    fbq('init', '1145119768083623');
+    fbq('track', 'PageView');
+    </script>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '720770960969635');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=720770960969635&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<style>
+    <noscript>
+        <img height="1"
+             width="1"
+             style="display:none"
+             src="https://www.facebook.com/tr?id=1145119768083623&ev=PageView&noscript=1"
+             alt="">
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#1a0000,#3b0000,#5e0000,#8b0000);
-background-size:400% 400%;
-animation:gradientMove 12s infinite alternate;
-overflow:hidden;
-}
+    <title>Dhanraj App</title>
 
-@keyframes gradientMove{
-0%{background-position:0% 50%;}
-100%{background-position:100% 50%;}
-}
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 
-/* floating glow circles */
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-.circle{
-position:absolute;
-border-radius:50%;
-filter:blur(120px);
-opacity:0.6;
-animation:float 10s infinite alternate;
-}
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-.circle1{
-width:300px;
-height:300px;
-background:#ff0000;
-top:10%;
-left:10%;
-}
+    <link rel="stylesheet"
+          href="https://dhmarketing.site/dd1/style.css">
 
-.circle2{
-width:250px;
-height:250px;
-background:#ff4d4d;
-bottom:10%;
-right:10%;
-}
-
-@keyframes float{
-0%{transform:translateY(0px);}
-100%{transform:translateY(-60px);}
-}
-
-/* glass card */
-
-.card{
-position:relative;
-width:340px;
-padding:40px 30px;
-border-radius:25px;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(20px);
-border:1px solid rgba(255,255,255,0.2);
-text-align:center;
-color:white;
-box-shadow:0 20px 60px rgba(0,0,0,0.6);
-animation:cardFloat 4s ease-in-out infinite;
-}
-
-@keyframes cardFloat{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-}
-
-.profile{
-width:110px;
-height:110px;
-border-radius:50%;
-border:4px solid white;
-object-fit:cover;
-margin-bottom:15px;
-}
-
-h2{
-margin-bottom:10px;
-font-size:22px;
-}
-
-.text{
-font-size:14px;
-opacity:0.9;
-line-height:1.6;
-margin-bottom:25px;
-}
-
-/* button */
-
-.btn{
-display:inline-flex;
-align-items:center;
-gap:12px;
-background:linear-gradient(45deg,#00c6ff,#0072ff);
-padding:14px 28px;
-border-radius:50px;
-font-weight:bold;
-color:white;
-text-decoration:none;
-font-size:16px;
-transition:0.4s;
-position:relative;
-overflow:hidden;
-}
-
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px #00c6ff;
-}
-
-.btn i{
-font-size:18px;
-}
-
-/* disclaimer */
-
-.disclaimer{
-margin-top:20px;
-font-size:11px;
-opacity:0.6;
-text-align:center;
-color:white;
-}
-
-.ads{
-text-align:center;
-margin-top:5px;
-font-size:12px;
-color:white;
-}
-
-.ads a{
-color:#00c6ff;
-font-weight:bold;
-text-decoration:none;
-}
-
-</style>
 </head>
 
 <body>
 
-<div class="circle circle1"></div>
-<div class="circle circle2"></div>
+<div class="bg-overlay"></div>
 
-<div>
+<section class="main-section">
 
-<div class="card">
+    <div class="container">
 
-<!-- JPG PHOTO -->
-<img src="https://i.ibb.co/W41QZtKz/logo.png" class="profile">
+        <div class="row justify-content-center">
 
-<h2>👑 𝗕𝗧𝗦𝗧 𝗤𝗨𝗘𝗘𝗡™ 👑</h2>
+            <div class="col-lg-5 col-md-7 col-sm-10">
 
-<div class="text">
-📊 Daily Market Analysis & Learning<br>
-🎯 14+ Years Trading Experience<br>
-🔥 Beginner To Advanced Guidance
-</div>
+                <div class="main-box">
 
-<a class="btn" href="https://telegram.dog/+CnF2hjE8rLw4YTM1" target="_blank">
-<i class="fab fa-telegram"></i>
-𝗝𝗼𝗶𝗻 𝗩𝗶𝗽 𝗚𝗿𝗼𝘂𝗽
-<i class="fab fa-telegram"></i>
-</a>
+                    <!-- Logo -->
+                    <div class="logo-box">
 
-</div>
+                        <img src="https://i.ibb.co/60vxD3Ky/logo.png"
+                             class="logo img-fluid">
 
-<div class="disclaimer">
-This channel is for educational and informational purposes only.
-</div>
+                        <div class="verify">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
 
-<div class="ads">
-Ads Managed By <a href="https://t.me/+EXH65DPSlHk2MTk1" target="_blank">Ads2laabh</a>
-</div>
+                    </div>
 
-</div>
+                    <!-- Heading -->
+                    <h1 class="title">
 
-<script>
+                        <span class="dash">-</span>
+                        <span class="red">Sara</span>
+                        <span class="white">777</span>
+                        <span class="white"></span>
+                        <span class="dash">-</span>
+                    </h1>
 
-setTimeout(function(){
-window.location.href="https://telegram.dog/+CnF2hjE8rLw4YTM1";
-},30000);
+                    <!-- Users -->
+                    <div class="users">
 
-</script>
+                        <i class="fa-solid fa-users"></i>
+                        340K+ active users
+
+                    </div>
+
+                    <!-- Trusted -->
+                    <div class="trusted">
+
+                        <i class="fa-solid fa-trophy"></i>
+                        India's Most Trusted Platform
+
+                    </div>
+
+                    <!-- Hindi -->
+                    <p class="hindi">
+
+                        नीचे दिये गए बटन पर क्लिक करके एप्लिकेशन
+                        को डाउनलोड करे 👇
+
+                    </p>
+
+                    <!-- Download -->
+                    <a href="https://raw.githubusercontent.com/rolexdigitalmarketing/sara/main/Sara%20777.apk"
+                       class="download-btn">
+
+                        <i class="fa-solid fa-circle-down"></i>
+
+                        Download Now
+
+                        <i class="fa-solid fa-circle-down"></i>
+
+                    </a>
+
+                    <!-- Features -->
+                    <div class="feature-box">
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-bolt"></i>
+                            Fast. Secure. Easy Installation
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-bolt"></i>
+                            Safe & Secure Online Platform
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-bolt"></i>
+                            Auto Dipst & Withdrol System
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-bolt"></i>
+                            Real-Time Results & Charts
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-bolt"></i>
+                            Anytime - All Day Withdrol System
+
+                        </div>
+
+                        <div class="feature-item">
+
+                            <i class="fa-solid fa-bolt"></i>
+                            100% Honest & Transparent Service
+
+                        </div>
+
+                    </div>
+
+                    <!-- Download -->
+                    <a href="https://raw.githubusercontent.com/rolexdigitalmarketing/sara/main/Sara%20777.apk"
+                       class="download-btn mt-4">
+
+                        <i class="fa-solid fa-circle-down"></i>
+
+                        Download Now
+
+                        <i class="fa-solid fa-circle-down"></i>
+
+                    </a>
+
+                    <!-- Footer -->
+                    <div class="footer-box">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <div>
+
+                            <p>*This page is only for app download purposes.</p>
+
+                            <p>No misleading claims are made.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://dhmarketing.site/dd1/script.js"></script>
 
 </body>
-</html>
-    
-  </body>
-  
 </html>
