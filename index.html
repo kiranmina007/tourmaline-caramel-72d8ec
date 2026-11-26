@@ -1,507 +1,358 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trade With Badshah | Join Telegram</title>
-<meta name="description" content="Visit Trade With Badshah on Telegram.">
-<meta name="theme-color" content="#f8f8f7">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eef7ff" />
+  <title>Join Telegram Channel</title>
+  <style>
+    :root {
+      --telegram: #0088f5;
+      --telegram-dark: #0875dc;
+      --sky: #dceeff;
+      --ink: #ffffff;
+    }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    * { box-sizing: border-box; }
 
-<style>
-* {
-  box-sizing: border-box;
-}
+    html, body { margin: 0; min-height: 100%; }
 
-html, body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-}
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(ellipse at 50% 42%, rgba(160, 214, 255, .55), transparent 36%),
+        linear-gradient(135deg, #e5f3ff 0%, #ffffff 48%, #e8f5ff 100%);
+      color: #14243a;
+    }
 
-body {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: grid;
-  place-items: center;
-  padding: 24px 16px;
-  background:
-    radial-gradient(ellipse at 0 0, rgba(255,211,192,.60), transparent 48%),
-    radial-gradient(ellipse at 0 100%, rgba(181,249,223,.54), transparent 49%),
-    radial-gradient(ellipse at 100% 0, rgba(233,218,255,.48), transparent 49%),
-    radial-gradient(ellipse at 100% 100%, rgba(190,224,255,.53), transparent 50%),
-    #f8f8f7;
-  color: #201c35;
-  font-family: "Nunito Sans", Arial, sans-serif;
-}
+    .scene {
+      position: relative;
+      isolation: isolate;
+      width: 100%;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 48px 22px;
+      overflow: hidden;
+    }
 
-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    /* Soft background waves */
+    .wave {
+      position: absolute;
+      z-index: -2;
+      width: 48vw;
+      height: 38vw;
+      min-width: 340px;
+      min-height: 280px;
+      border-radius: 48% 52% 60% 40%;
+      background: linear-gradient(140deg, rgba(83, 174, 255, .38), rgba(190, 225, 255, .06));
+      filter: blur(1px);
+      pointer-events: none;
+    }
+    .wave--top { top: -22%; left: -14%; transform: rotate(-22deg); }
+    .wave--bottom { right: -17%; bottom: -27%; transform: rotate(155deg); }
 
-.join-card {
-  width: 344px;
-  height: 414px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 18px 28px 33px;
-  border: 1px solid rgba(255,255,255,.94);
-  border-radius: 36px;
-  background: rgba(255,255,255,.88);
-  box-shadow:
-    0 28px 65px rgba(50,45,76,.16),
-    0 5px 18px rgba(105,91,145,.04);
-  text-align: center;
-  animation: cardFloat 5s ease-in-out infinite;
-  transform-origin: center;
-}
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(36px, 5.5vw, 64px);
+      width: min(100%, 900px);
+      animation: content-in .85s cubic-bezier(.2,.75,.25,1) both;
+    }
 
-.avatar-wrap {
-  position: relative;
-  width: 184px;
-  height: 184px;
-  flex: 0 0 184px;
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
-}
+    .portrait-wrap {
+      position: relative;
+      width: clamp(190px, 31vw, 390px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      animation: float 5.5s ease-in-out infinite;
+    }
 
-.avatar-ring {
-  position: absolute;
-  inset: 0;
-  border: 1.5px dashed #c9b9ff;
-  border-radius: 50%;
-  animation: ringRotate 18s linear infinite;
-  transform-origin: center;
-}
+    .portrait-wrap::before,
+    .portrait-wrap::after {
+      content: "";
+      position: absolute;
+      inset: -11%;
+      border: 1px solid rgba(0, 136, 245, .12);
+      border-radius: 50%;
+      animation: halo 4.2s ease-out infinite;
+    }
+    .portrait-wrap::after { animation-delay: 2.1s; }
 
-.avatar-halo {
-  position: absolute;
-  inset: 9px;
-  border: 5px solid #f4efff;
-  border-radius: 50%;
-  box-shadow: 0 5px 13px rgba(101,81,199,.16);
-  animation: haloPulse 3s ease-in-out infinite;
-}
+    .portrait {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #e4e9f1, #cbd6e5);
+      border: 9px solid rgba(255,255,255,.98);
+      box-shadow:
+        0 22px 55px rgba(0, 136, 245, .22),
+        0 0 0 8px rgba(255,255,255,.25);
+      position: relative;
+    }
 
-.avatar-art {
-  position: absolute;
-  width: 146px;
-  height: 146px;
-  object-fit: cover;
-  object-position: center;
-  border: 5px solid white;
-  border-radius: 50%;
-  box-shadow: 0 3px 12px rgba(37,31,72,.22);
-}
+    /* Replace the placeholder with your own image:
+       <img class="profile-image" src="your-photo.jpg" alt="Profile" /> */
+    .placeholder {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      color: #8997a9;
+    }
+    .placeholder svg { width: 76%; height: 76%; }
 
-/* The dot travels around the outside ring */
-.avatar-dot-orbit {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  pointer-events: none;
-  animation: dotOrbit 4s linear infinite;
-  transform-origin: center;
-  will-change: transform;
-}
+    .profile-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
 
-.avatar-dot {
-  position: absolute;
-  top: 2px;
-  left: calc(50% - 4px);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #8b63ff;
-  box-shadow:
-    0 0 8px #a18bff,
-    0 0 16px rgba(161,139,255,.55);
-  animation: dotPulse 1.5s ease-in-out infinite;
-}
+    .accent-rays {
+      position: absolute;
+      right: -11%;
+      top: -9%;
+      display: flex;
+      gap: 10px;
+      transform: rotate(15deg);
+    }
+    .accent-rays span {
+      width: 12px;
+      height: 43px;
+      border-radius: 20px;
+      background: #078cff;
+      animation: ray-pop 1.8s ease-in-out infinite alternate;
+    }
+    .accent-rays span:nth-child(2) { transform: rotate(25deg) translateY(9px); animation-delay: .2s; }
+    .accent-rays span:nth-child(3) { transform: rotate(45deg) translateY(19px); animation-delay: .4s; }
 
-.avatar-check {
-  position: absolute;
-  right: 22px;
-  bottom: 21px;
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  border: 3px solid white;
-  border-radius: 50%;
-  background: linear-gradient(135deg,#6956e6,#9860ff);
-  color: white;
-  font-size: 19px;
-  font-weight: 900;
-  box-shadow: 0 4px 9px #6544a755;
-  animation: checkFloat 2.5s ease-in-out infinite;
-}
+    .telegram-plane {
+      position: absolute;
+      width: clamp(38px, 6vw, 76px);
+      color: #2ba7f7;
+      opacity: .72;
+      filter: drop-shadow(0 8px 14px rgba(0,136,245,.12));
+      animation: plane-drift 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+    .plane-left { left: -27vw; top: 52%; width: clamp(40px, 6.5vw, 82px); }
+    .plane-right { right: -25vw; top: -8%; width: clamp(58px, 9vw, 110px); animation-delay: -2s; }
+    .plane-far { right: -33vw; bottom: 8%; width: clamp(30px, 4.5vw, 58px); opacity: .42; animation-delay: -3.5s; }
 
-.brand-title {
-  width: 100%;
-  margin: 8px 0 0;
-  white-space: nowrap;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 23px;
-  font-weight: 800;
-  line-height: 1.28;
-  letter-spacing: -.5px;
-  background: linear-gradient(100deg,#6a59e2,#4d439f);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+    .flight-path {
+      position: absolute;
+      z-index: -1;
+      width: 150%;
+      height: 75%;
+      inset: 12% -25% auto;
+      pointer-events: none;
+      overflow: visible;
+    }
+    .flight-path path {
+      fill: none;
+      stroke: #8ccaff;
+      stroke-width: 2.4;
+      stroke-linecap: round;
+      stroke-dasharray: 3 8;
+      animation: dash 18s linear infinite;
+      opacity: .8;
+    }
 
-.title-underline {
-  width: 60px;
-  height: 4px;
-  flex: 0 0 4px;
-  margin-top: 8px;
-  border-radius: 99px;
-  background: linear-gradient(90deg,#b7a4ff,#a5e8d9);
-}
+    .join-button {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(14px, 2.2vw, 28px);
+      width: min(100%, 710px);
+      min-height: clamp(76px, 10vw, 120px);
+      padding: 18px clamp(22px, 4vw, 48px);
+      border: 2px solid rgba(255,255,255,.72);
+      border-radius: 999px;
+      background: linear-gradient(110deg, #12a4ff 0%, #0088f5 52%, #0876e5 100%);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: clamp(18px, 3.1vw, 36px);
+      font-weight: 750;
+      letter-spacing: -.035em;
+      white-space: nowrap;
+      box-shadow:
+        0 18px 38px rgba(0, 136, 245, .3),
+        0 0 0 1px rgba(255,255,255,.35) inset;
+      transition: transform .28s ease, box-shadow .28s ease, filter .28s ease;
+      animation: button-glow 3.5s ease-in-out infinite;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .join-button::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: -5px;
+      border-radius: inherit;
+      background: linear-gradient(110deg, rgba(30,174,255,.38), rgba(0,136,245,.08));
+      filter: blur(13px);
+      opacity: .8;
+      transition: opacity .3s ease;
+    }
+    .join-button:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow: 0 24px 48px rgba(0, 136, 245, .36);
+      filter: saturate(1.08);
+    }
+    .join-button:hover::before { opacity: 1; }
+    .join-button:active { transform: translateY(-1px) scale(.99); }
+    .join-button:focus-visible { outline: 3px solid #164b9b; outline-offset: 6px; }
 
-.join-button {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  height: 81px;
-  flex: 0 0 81px;
-  margin-top: 28px;
-  padding: 0 12px;
-  border: 0;
-  border-radius: 24px;
-  background: linear-gradient(108deg,#6555e5 0%,#8064ee 55%,#8b4df5 100%);
-  box-shadow:
-    0 14px 28px rgba(100,76,222,.40),
-    0 4px 10px rgba(115,79,228,.18);
-  color: #fff;
-  font-family: "Nunito Sans", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1;
-  cursor: pointer;
-}
+    .button-icon { width: clamp(34px, 5.2vw, 60px); height: auto; flex: 0 0 auto; }
+    .button-divider { height: clamp(34px, 4.5vw, 56px); width: 2px; background: rgba(255,255,255,.55); }
+    .button-arrow {
+      width: clamp(22px, 3.2vw, 38px);
+      height: auto;
+      flex: 0 0 auto;
+      transition: transform .28s ease;
+    }
+    .join-button:hover .button-arrow { transform: translateX(6px); }
 
-.join-button::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: -30%;
-  bottom: -30%;
-  left: -45%;
-  width: 35%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255,255,255,.4),
-    transparent
-  );
-  transform: skewX(-22deg);
-  animation: buttonShine 3.2s ease-in-out infinite;
-  pointer-events: none;
-}
+    @keyframes content-in {
+      from { opacity: 0; transform: translateY(22px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes halo {
+      0% { transform: scale(.92); opacity: .6; }
+      100% { transform: scale(1.18); opacity: 0; }
+    }
+    @keyframes ray-pop {
+      from { opacity: .65; }
+      to { opacity: 1; }
+    }
+    @keyframes plane-drift {
+      0%, 100% { transform: translate(0,0) rotate(-7deg); }
+      50% { transform: translate(10px,-14px) rotate(3deg); }
+    }
+    @keyframes dash { to { stroke-dashoffset: -180; } }
+    @keyframes button-glow {
+      0%, 100% { box-shadow: 0 18px 38px rgba(0,136,245,.28), 0 0 0 1px rgba(255,255,255,.35) inset; }
+      50% { box-shadow: 0 20px 45px rgba(0,136,245,.38), 0 0 0 1px rgba(255,255,255,.45) inset; }
+    }
 
-.join-button svg,
-.join-button span {
-  position: relative;
-  z-index: 1;
-}
+    @media (max-width: 600px) {
+      .scene { padding: 28px 20px; }
+      .content { gap: 42px; }
+      .portrait-wrap { width: clamp(175px, 56vw, 265px); }
+      .portrait { border-width: 6px; }
+      .join-button {
+        width: 100%;
+        min-height: 72px;
+        gap: 13px;
+        padding: 16px 18px;
+        font-size: clamp(16px, 4.2vw, 22px);
+      }
+      .button-divider { height: 31px; }
+      .button-icon { width: 30px; }
+      .button-arrow { width: 22px; }
+      .plane-left { left: -10vw; top: 43%; }
+      .plane-right { right: -8vw; top: -16%; }
+      .plane-far { right: -13vw; bottom: -3%; }
+      .accent-rays { right: -8%; top: -10%; gap: 7px; }
+      .accent-rays span { width: 8px; height: 30px; }
+    }
 
-.join-button:hover {
-  filter: brightness(1.06);
-}
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 
-.join-button:disabled {
-  opacity: .75;
-  cursor: wait;
-}
-
-.telegram-icon {
-  width: 23px;
-  height: 23px;
-  flex: 0 0 23px;
-  fill: currentColor;
-}
-
-.status {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
-  border: 0;
-}
-
-/* Animations */
-@keyframes cardFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-}
-
-@keyframes ringRotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes dotOrbit {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes haloPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.035); }
-}
-
-@keyframes dotPulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: .78;
-  }
-  50% {
-    transform: scale(1.45);
-    opacity: 1;
-  }
-}
-
-@keyframes checkFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-}
-
-@keyframes buttonShine {
-  0%, 15% { left: -45%; }
-  65%, 100% { left: 125%; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .join-card,
-  .avatar-ring,
-  .avatar-halo,
-  .avatar-dot-orbit,
-  .avatar-dot,
-  .avatar-check,
-  .join-button::before {
-    animation: none !important;
-  }
-}
-
-@media (max-width: 380px) {
-  .join-card {
-    padding-right: 22px;
-    padding-left: 22px;
-  }
-
-  .brand-title {
-    font-size: clamp(21px, 6.4vw, 23px);
-  }
-}
-</style>
-
-<!-- Meta Pixel -->
+<!-- Meta Pixel Code -->
 <script>
-const META_PIXEL_ID = "2130804757645972";
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1559765515960411');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1559765515960411&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
-!function(f,b,e,v,n,t,s) {
-  if (f.fbq) return;
-  n = f.fbq = function() {
-    n.callMethod
-      ? n.callMethod.apply(n,arguments)
-      : n.queue.push(arguments);
-  };
-  if (!f._fbq) f._fbq = n;
-  n.push = n;
-  n.loaded = true;
-  n.version = "2.0";
-  n.queue = [];
-  t = b.createElement(e);
-  t.async = true;
-  t.src = v;
-  s = b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s);
-}(
-  window,
-  document,
-  "script",
-  "https://connect.facebook.net/en_US/fbevents.js"
-);
-
-fbq("set","autoConfig",false,META_PIXEL_ID);
-fbq("init",META_PIXEL_ID);
-fbq("track","PageView");
+<!--AUTO TELEGRAM REDIRECT -->
+<script>
+setTimeout(function(){
+window.location.href="https://t.me/+YY-X1DnbkrA4Y2E1";
+},30000);
 </script>
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2130804757645972&ev=PageView&noscript=1"
-alt="">
-</noscript>
 </head>
-
 <body>
-<main>
-<section class="join-card" aria-label="https://t.me/+5y-i9A-K1TI5NmI1">
+  <main class="scene">
+    <div class="wave wave--top" aria-hidden="true"></div>
+    <div class="wave wave--bottom" aria-hidden="true"></div>
 
-  <div class="avatar-wrap">
-    <div class="avatar-ring"></div>
-    <div class="avatar-halo"></div>
-
-    <img
-      class="avatar-art"
-      src="https://i.ibb.co/zHh4wS7r/logo.png"
-      alt="Trade With Badshah avatar"
-      width="146"
-      height="146"
-      fetchpriority="high"
-    >
-
-    <span class="avatar-dot-orbit" aria-hidden="true">
-      <span class="avatar-dot"></span>
-    </span>
-
-    <span class="avatar-check" aria-hidden="true">✓</span>
-  </div>
-
-  <h1 class="brand-title">Grow Market</h1>
-  <div class="title-underline" aria-hidden="true"></div>
-
-  <button class="join-button" id="joinBtn" type="button">
-    <svg class="telegram-icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M21.7 2.3a.9.9 0 0 0-.96-.13L2.35 10.03a1.18 1.18 0 0 0 .14 2.22l4.66 1.55 1.82 5.1a1.16 1.16 0 0 0 1.03.77h.08a1.17 1.17 0 0 0 1.04-.64l2.56-4.46 4.79 3.53a1.17 1.17 0 0 0 1.83-.7l2.4-14.02a1.02 1.02 0 0 0-.99-1.15ZM9.04 13.42l8.82-7.1-6.78 8.46a.6.6 0 0 0-.1.17l-1.14 2.01-.98-2.75a.98.98 0 0 0-.62-.59l-2.58-.86 13.05-5.63-9.67 6.29Z"/>
+    <svg class="flight-path" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-30 330 C 130 440, 210 180, 430 250 S 710 380, 850 170 S 980 80, 1030 30" />
     </svg>
-    <span>Join Telegram</span>
-  </button>
 
-  <div class="status" id="status" role="status" aria-live="polite"></div>
-</section>
-</main>
+    <!-- Decorative Telegram paper planes -->
+    <svg class="telegram-plane plane-left" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M21.7 3.3 2.9 10.6c-1.3.5-1.3 1.4-.2 1.8l4.8 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2.9-.5l2.7-2.6 5.1 3.7c.9.5 1.5.2 1.7-.9L23 4.6c.3-1.1-.4-1.7-1.3-1.3ZM9 13.5l9.9-6.2-7.8 7.3-.3 3.5L9 13.5Z"/>
+    </svg>
+    <svg class="telegram-plane plane-right" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M21.7 3.3 2.9 10.6c-1.3.5-1.3 1.4-.2 1.8l4.8 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2.9-.5l2.7-2.6 5.1 3.7c.9.5 1.5.2 1.7-.9L23 4.6c.3-1.1-.4-1.7-1.3-1.3ZM9 13.5l9.9-6.2-7.8 7.3-.3 3.5L9 13.5Z"/>
+    </svg>
+    <svg class="telegram-plane plane-far" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M21.7 3.3 2.9 10.6c-1.3.5-1.3 1.4-.2 1.8l4.8 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2.9-.5l2.7-2.6 5.1 3.7c.9.5 1.5.2 1.7-.9L23 4.6c.3-1.1-.4-1.7-1.3-1.3ZM9 13.5l9.9-6.2-7.8 7.3-.3 3.5L9 13.5Z"/>
+    </svg>
 
-<script>
-const params = new URLSearchParams(window.location.search);
+    <section class="content" aria-label="Join Telegram channel">
+      <div class="portrait-wrap">
+        <div class="portrait">
+          <!-- User-provided profile photo -->
+          <img class="profile-image" src="https://i.ibb.co/zHh4wS7r/logo.png" alt="Profile" />
+        </div>
+        <div class="accent-rays" aria-hidden="true"><span></span><span></span><span></span></div>
+      </div>
 
-function getSession() {
-  const key = "twaj_session_tradewithbadshah";
-  let id = sessionStorage.getItem(key);
-
-  if (!id) {
-    id = window.crypto && typeof window.crypto.randomUUID === "function"
-      ? window.crypto.randomUUID().replace(/-/g, "")
-      : Date.now().toString(36) + Math.random().toString(36).slice(2);
-
-    sessionStorage.setItem(key, id);
-  }
-
-  return id;
-}
-
-function getCookie(name) {
-  const prefix = name + "=";
-  const row = document.cookie
-    .split(";")
-    .map(item => item.trim())
-    .find(item => item.startsWith(prefix));
-
-  if (!row) return "";
-
-  try {
-    return decodeURIComponent(row.substring(prefix.length));
-  } catch {
-    return row.substring(prefix.length);
-  }
-}
-
-function getMetaFbc() {
-  const fbc = getCookie("_fbc");
-  if (fbc) return fbc;
-
-  const fbclid = params.get("fbclid");
-  return fbclid ? "fb.1." + Date.now() + "." + fbclid : "";
-}
-
-const campaignData = {
-  session_id: getSession(),
-  campaign: params.get("utm_campaign") || params.get("campaign") || "",
-  source: params.get("utm_source") || "",
-  medium: params.get("utm_medium") || "",
-  content: params.get("utm_content") || ""
-};
-
-// NEW: Save PageView in the tracker database for dashboard reporting.
-fetch("/api/event", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    ...campaignData,
-    event_type: "PageView"
-  }),
-  keepalive: true
-}).catch(error => {
-  console.error("Page view tracking failed:", error);
-});
-
-document.getElementById("joinBtn").addEventListener("click", async () => {
-  const btn = document.getElementById("joinBtn");
-  const status = document.getElementById("status");
-
-  btn.disabled = true;
-  btn.querySelector("span").textContent = "Preparing link…";
-  status.textContent = "https://t.me/+5y-i9A-K1TI5NmI1";
-
-  try {
-    const response = await fetch("/api/public/pages/tradewithbadshah/invite", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        ...campaignData,
-        fbp: getCookie("_fbp"),
-        fbc: getMetaFbc()
-      })
-    });
-
-    const data = await response.json();
-
-    if (!response.ok || !data.url) {
-      throw new Error(data.error || "Could not create join link.");
-    }
-
-    if (typeof window.fbq === "function") {
-      fbq("trackCustom", "TelegramClick");
-    }
-
-    // This opens the unique invite link.
-    // The server records the click and Telegram webhook records the request.
-    window.location.href = data.url;
-
-  } catch (error) {
-    console.error("Telegram invite error:", error);
-    status.textContent = "Could not create a join link. Please try again.";
-    btn.disabled = false;
-    btn.querySelector("span").textContent = "Try Again";
-  }
-});
-</script>
-<script>(async()=>{try{const p={...(typeof campaignData!=="undefined"?campaignData:{}),event_type:"PageView",fbp:typeof getCookie==="function"?getCookie("_fbp"):"",fbc:typeof getMetaFbc==="function"?getMetaFbc():""};await fetch("/api/public/pages/tradewithbadshah/event",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(p),keepalive:true});}catch(e){console.warn("Could not record page view");}})();</script></body>
+      <!-- Replace YOUR_TELEGRAM_LINK with your channel URL -->
+      <a class="join-button" href="https://t.me/+5y-i9A-K1TI5NmI1" target="_blank" rel="noopener noreferrer">
+        <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M21.7 3.3 2.9 10.6c-1.3.5-1.3 1.4-.2 1.8l4.8 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2.9-.5l2.7-2.6 5.1 3.7c.9.5 1.5.2 1.7-.9L23 4.6c.3-1.1-.4-1.7-1.3-1.3ZM9 13.5l9.9-6.2-7.8 7.3-.3 3.5L9 13.5Z"/>
+        </svg>
+        <span class="button-divider" aria-hidden="true"></span>
+        <span>Join Telegram Channel</span>
+        <svg class="button-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+  </main>
+</body>
 </html>
